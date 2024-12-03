@@ -11,15 +11,6 @@ dev:
 run DAY:
     zig run src/day_{{DAY}}/main.zig
 
-# Watch a specific day's solution and run on changes
-# watch DAY:
-#     #!/usr/bin/env bash
-#     while true; do
-#         inotifywait -e modify -r src/day{{DAY}}
-#         clear
-#         just run {{DAY}}
-#     done
-
 # Test specific day's solution
 test DAY:
     zig test src/day_{{DAY}}/main.zig

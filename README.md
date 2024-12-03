@@ -63,7 +63,17 @@ just new 1
 
 2. Edit the solution in `src/day1/main.zig`
 
-3. Run tests:
+3. Run:
+
+Run in watch mode
+```bash
+just dev
+```
+
+OR 
+
+
+Run test
 ```bash
 just test 1
 ```
