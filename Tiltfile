@@ -10,9 +10,16 @@ def create_day_resource(day):
         auto_init=False
     )
 
+    local_resource(
+        'test day-' + str(day),
+        cmd='just test ' + str(day),
+        deps=['src/day_' + str(day) + '/main.zig'],
+        auto_init=False
+    )
+
 # Create resources for existing day folders
-# for day in range(1, 2):
-#     create_day_resource(day)
+for day in range(1, 2):
+    create_day_resource(day)
 
 # # Add a resource for running all tests
 # local_resource(
@@ -30,4 +37,4 @@ def create_day_resource(day):
 #     auto_init=False
 # )
 
-create_day_resource(1)
+# create_day_resource(1)
