@@ -18,7 +18,7 @@ def create_day_resource(day):
     )
 
 # Create resources for existing day folders
-for day in range(1, 2):
+for day in range(2, 3):
     create_day_resource(day)
 
 # # Add a resource for running all tests
